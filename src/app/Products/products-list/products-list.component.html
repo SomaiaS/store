@@ -1,0 +1,11 @@
+<p-progressSpinner *ngIf="!isProductsLoaded" class="custom-progress"></p-progressSpinner>
+
+<div *ngIf="isProductsLoaded" class="container">
+  <div class="row">
+  <div *ngFor="let item of products" class="col-xs-12 col-md-4">
+   <app-product-card [product]="item"></app-product-card>
+  </div>
+  </div>
+</div>
+
+

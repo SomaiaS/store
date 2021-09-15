@@ -1,0 +1,17 @@
+div.form
+{
+  display: block;
+  text-align: center;
+  margin-top: 100px;
+}
+form
+{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+input ,textarea{
+  margin-bottom: 20px;
+}

@@ -1,0 +1,82 @@
+   <div  *ngIf="this.product" class="prod-info-main prod-wrap clearfix">
+
+
+        <div class="col-md-5 col-sm-12 col-xs-12">
+
+          <div class="product-image">
+
+            <img width="150px" height="150px" [src]="product.image"  class="img-responsive">
+
+          </div>
+
+        </div>
+
+        <div class="col-md-7 col-sm-12 col-xs-12">
+
+          <div class="product-deatil">
+
+            <h5 class="name">
+
+              <a href="#">
+
+                {{product.title}}
+
+              </a>
+
+              <a href="#">
+
+                <span>  {{product.category}}</span>
+
+              </a>
+
+            </h5>
+
+            <p class="price-container">
+
+              <span>{{product.price}}</span>
+
+            </p>
+
+            <span class="tag1"></span>
+
+          </div>
+
+          <div class="description">
+
+            <p>{{product.description}}</p>
+
+          </div>
+
+          <div class="product-info smart-form">
+
+            <div class="row">
+
+
+              <div class="col-md-12">
+
+                <div *ngIf="product.rating" class="rating">Rating:
+                  {{product.rating.rate}}
+                  <!--                  <p-rating [(ngModel)]="x"></p-rating>-->
+
+                </div>
+
+              </div>
+
+              <div class="col-md-12">
+
+                <div  *ngIf="product.rating" class="rating">available in stock: {{product.rating.count}}
+
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
